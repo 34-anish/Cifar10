@@ -103,7 +103,7 @@ means that **64** 3*3 filters of RGB(3) channels have stride =1
 -  Hence, the output shape =(None,60,60,64)
 **Parameters**
 - $$((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]} $$
-- $$ ((3*3*32)+1)*64=18496 $$
+- ((3 * 3 * 32)+1) * 64=18496 
 `dense_17`
 
 - $$Parameters = 256 * 256 + 256 * 1 = 65792$$
