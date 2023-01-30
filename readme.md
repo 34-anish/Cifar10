@@ -61,7 +61,7 @@ Image can be plotted with `matplotlib` library
 - ![80cc70ae7c590668dd8e1f4806b7dcdd.png](./_resources/80cc70ae7c590668dd8e1f4806b7dcdd.png)
 **Parameters**
 - First parameter = 
-- $$ ( ( 3 X 3 X 3 )+1) X 16 = 448 $$
+- ( ( 3 X 3 X 3 )+1) X 16 = 448 
 ![05f62c6e7206ff63052a510878870956.png](./_resources/05f62c6e7206ff63052a510878870956.png)
 
 - For **maxpooling**
@@ -84,7 +84,7 @@ means that **32** 3*3 filters of RGB(3) channels have stride =1
 - Hence, the output shape =(None,125,125,32)
 **Parameters**
 - $$((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]}$$
-- $$ ( ( 3 X 3 X 16 ) + 1 ) X 32=4640 $$
+- ( ( 3 X 3 X 16 ) + 1 ) X 32=4640 
 
 ### For max pooling
 
