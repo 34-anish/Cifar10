@@ -1,3 +1,4 @@
+Inspired By <a link ="https://www.youtube.com/watch?v=7HPwo4wnJeA"> CodeBasics </a>
 # Training The Model
 Training is done on cifar10_model_train.ipynb and the testing with new images can be done on test.ipynb
 ## Installing the dependencies
@@ -180,3 +181,5 @@ Graph For accuracy
 🥁🥁🥁 
 ![9ce12eef8f9304045a65988f72cb4afb.png](./_resources/9ce12eef8f9304045a65988f72cb4afb.png)
 <br>TURNS OUT I'M A TRUCK🚚🚚
+Refernce :
+https://github.com/codebasics/deep-learning-keras-tf-tutorial/tree/master/16_cnn_cifar10_small_image_classificationhttps://machinelearningmastery.com/how-to-develop-a-cnn-from-scratch-for-cifar-10-photo-classification/
