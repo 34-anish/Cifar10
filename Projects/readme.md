@@ -60,8 +60,7 @@ Image can be plotted with `matplotlib` library
     
 - ![80cc70ae7c590668dd8e1f4806b7dcdd.png](../_resources/80cc70ae7c590668dd8e1f4806b7dcdd.png)
 **Parameters**
-- First parameter =
-$$ ((3*3*3)+1)*16 = 448$$
+- First parameter = $$((3*3*3)+1)*16 = 448$$
 ![05f62c6e7206ff63052a510878870956.png](../_resources/05f62c6e7206ff63052a510878870956.png)
 
 - For **maxpooling**
@@ -83,7 +82,7 @@ means that **32** 3*3 filters of RGB(3) channels have stride =1
 - The chanels would be 32
 - Hence, the output shape =(None,125,125,32)
 **Parameters**
-$$ ((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]} $$
+$$((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]}$$
 $$((3*3*16)+1)*32=4640$$
 
 ### For max pooling
@@ -102,15 +101,15 @@ means that **64** 3*3 filters of RGB(3) channels have stride =1
 -  The chanels would be 64
 -  Hence, the output shape =(None,60,60,64)
 **Parameters**
-$$ ((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]} $$
+$$((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]} $$
 $$((3*3*32)+1)*64=18496$$
 `dense_17`
 
-$$Parameters = 256*256+256*1 = 65792$$
+$$Parameters = 256 * 256 + 256 * 1 = 65792$$
 
 `dense_18`
 
-$$Parameters = 256*10+10*1 = 2570$$
+$$Parameters = 256 * 10 + 10 * 1 = 2570$$
 
 `model.compile('adam',loss='sparse_categorical_crossentropy',metrics=['accuracy'])`
 **Adaptive Moment Estimation Algorithm** optmiizer is used with loss = sparse\_categorical\_entropy
