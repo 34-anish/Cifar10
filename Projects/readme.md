@@ -92,22 +92,18 @@ $$((3*3*16)+1)*32=4640$$
     
 
 ## For third conv2D
-
-`model.add(Conv2D(64,(3,3),1,activation='relu'))`
-means that **64** 3*3 filters of RGB(3) channels have stride =1
-
-- $$ \lfloor \frac{n-f+2p}{s} +1\rfloor $$
-    
+`model.add(Conv2D(64,(3,3),1,activation='relu'))
+`
+means that **64** 3*3 filters of RGB(3) channels have stride =1 
+-  $$\lfloor \frac{n-f+2p}{s} +1\rfloor$$
 - Here n = 62 ,f =3 ,p =0 ,s=1
-- $$   \lfloor \frac{62-3}{1} +1\rfloor$$
-    
-- 60 is the width and height of its output layer
-- The chanels would be 64
-- Hence, the output shape =(None,60,60,64)
+-  $$\lfloor \frac{62-3}{1} +1\rfloor$$ 
+-  60 is the width and height of its output layer
+-  The chanels would be 64
+-  Hence, the output shape =(None,60,60,64)
 **Parameters**
 $$ ((f_{H}*f_{W}*n^{[C-1]})+1)*n^{[C]} $$
 $$((3*3*32)+1)*64=18496$$
-
 `dense_17`
 
 $$Parameters = 256*256+256*1 = 65792$$
